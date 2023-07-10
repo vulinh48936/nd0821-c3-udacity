@@ -57,8 +57,8 @@ def test_model_and_paths():
     model = joblib.load("starter/model/lr_model.pkl")
     assert isinstance(model, LogisticRegression)
 
-# if __name__ == "__main__":
-#     data = test_data()
-#     test_data_and_features(data)
-#     test_process_data_function(data)
-#     test_model_and_paths()
+if __name__ == "__main__":
+    data = test_data()
+    test_data_and_features(data)
+    test_process_data_function(data)
+    test_model_and_paths()
