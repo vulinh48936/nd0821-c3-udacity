@@ -26,7 +26,8 @@ def test_data():
     return pd.read_csv('starter/data/clean_census.csv')
 
 
-def test_data_and_features(data):
+def test_data_and_features():
+    data = test_data()
     # Data should be greater than 100 samples
     assert data.shape[0] > 100
 
@@ -38,7 +39,8 @@ def test_data_and_features(data):
         assert cat_feat in list(data.columns)
 
 
-def test_process_data_function(data):
+def test_process_data_function():
+    data = test_data()
     train, test = train_test_split(data, random_state=42, test_size=0.2)
     X, y, _, _ = process_data(
         train, cat_features, label='salary'
