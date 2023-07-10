@@ -21,7 +21,7 @@ data_sample = {
     "native_country": 'United-States'
 }
 
-app_url = "https://nd0821-c3-udacity.herokuapp.com/predict"
+app_url = "https://udacity3-linhvm4-e58005d8d257.herokuapp.com/predict"
 
 result = requests.post(app_url, json=data_sample)
 assert result.status_code == 200
