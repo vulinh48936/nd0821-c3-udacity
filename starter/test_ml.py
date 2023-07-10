@@ -19,7 +19,6 @@ cat_features = [
 ]
 
 # Utilizing a fixture facilitates the reuse of data by storing it in a variable, in this case, a Pandas DataFrame.
-@pytest.fixture()
 def test_data():
     # Check if the path and file exist
     assert os.path.exists('starter/data/clean_census.csv')
