@@ -1,0 +1,38 @@
+Performance on slices of data based on workclass
+*****************************************************
+workclass = State-gov
+data size: 1298
+precision: 0.7767857142857143, recall: 0.24645892351274787, fbeta: 0.3741935483870968
+-------------------------------------------------
+workclass = Self-emp-not-inc
+data size: 2541
+precision: 0.7463235294117647, recall: 0.2803867403314917, fbeta: 0.4076305220883534
+-------------------------------------------------
+workclass = Private
+data size: 22696
+precision: 0.7, recall: 0.2538787023977433, fbeta: 0.3726157030903445
+-------------------------------------------------
+workclass = Federal-gov
+data size: 960
+precision: 0.7155963302752294, recall: 0.21024258760107817, fbeta: 0.325
+-------------------------------------------------
+workclass = Local-gov
+data size: 2093
+precision: 0.6759259259259259, recall: 0.2366288492706645, fbeta: 0.35054021608643454
+-------------------------------------------------
+workclass = ?
+data size: 1836
+precision: 0.5638297872340425, recall: 0.2774869109947644, fbeta: 0.3719298245614035
+-------------------------------------------------
+workclass = Self-emp-inc
+data size: 1116
+precision: 0.9205020920502092, recall: 0.3536977491961415, fbeta: 0.5110336817653891
+-------------------------------------------------
+workclass = Without-pay
+data size: 14
+precision: 1.0, recall: 1.0, fbeta: 1.0
+-------------------------------------------------
+workclass = Never-worked
+data size: 7
+precision: 1.0, recall: 1.0, fbeta: 1.0
+-------------------------------------------------
