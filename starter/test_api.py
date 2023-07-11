@@ -52,14 +52,14 @@ def test_post_predict_above_50k():
         "relationship": "Husband",
         "race": "White",
         "sex": "Male",
-        "capital_gain": 0,
+        "capital_gain": 50000,
         "capital_loss": 0,
         "hours_per_week": 50,
         "native_country": "United-States"
     })
 
     assert result.status_code == 200
-    assert result.json() == {"Income category is: ": "<=50K"}
+    assert result.json() == {"Income category is: ": ">50K"}
 
 
 if __name__ == "__main__":
