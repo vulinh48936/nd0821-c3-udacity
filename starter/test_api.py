@@ -1,5 +1,7 @@
 from fastapi.testclient import TestClient
 from main import app
+import warnings
+warnings.filterwarnings("ignore")
 
 # Call Test-Client to run normal Python tests
 client = TestClient(app)

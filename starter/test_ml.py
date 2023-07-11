@@ -6,6 +6,8 @@ import os
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from starter.ml.data import process_data
+import warnings
+warnings.filterwarnings("ignore")
 
 cat_features = [
     "workclass",
@@ -58,7 +60,7 @@ def test_model_and_paths():
     assert isinstance(model, LogisticRegression)
 
 if __name__ == "__main__":
-    data = test_data()
-    test_data_and_features(data)
-    test_process_data_function(data)
+    test_data()
+    test_data_and_features()
+    test_process_data_function()
     test_model_and_paths()
